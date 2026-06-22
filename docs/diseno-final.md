@@ -84,29 +84,7 @@ Una sola diferencia respecto a la versión anterior del SQL: **no se incluye el 
 
 ## 4. ESTRUCTURA DE DATOS FINAL — 8 TABLAS
 
-```
-                       ┌──────────────────────┐
-                       │    RESTAURANTE       │   ← raíz multi-tenant
-                       └──────────┬───────────┘
-                                  │
-        ┌──────────────────┬──────┴──────┬──────────────────┐
-        │                  │             │                  │
-   ┌────▼─────┐      ┌─────▼─────┐  ┌────▼──────┐
-   │ USUARIO  │      │   MESA    │  │ CATEGORIA │
-   └──────────┘      └─────┬─────┘  └────┬──────┘
-                           │             │
-                     ┌─────▼─────┐  ┌────▼──────┐
-                     │SESION_MESA│  │ PRODUCTO  │
-                     └─────┬─────┘  └────┬──────┘
-                           │             │
-                     ┌─────▼─────┐       │
-                     │  PEDIDO   │       │
-                     └─────┬─────┘       │
-                           │             │
-                     ┌─────▼─────────────▼─────┐
-                     │      LINEA_PEDIDO       │
-                     └─────────────────────────┘
-```
+![alt text](image.png)
 
 ### Resumen de tablas
 
